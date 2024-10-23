@@ -1,5 +1,5 @@
-# NeRF를 이용한 Data Augmentation기법의 Image Classification 성능 탐구 
-- A Study on the Image Classification Performance of Data Augmentation Techniques Using NeRF
+# NeRF<sup>*</sup>(3D Reconstruction Model)를 이용한 Data Augmentation기법의 Image Classification 성능 탐구 
+> A Study on the Image Classification Performance of Data Augmentation Techniques Using NeRF<sup>*</sup>(3D Reconstruction Model)
 
 > 2024 FALL AI Intensive Class1 (SCE3319, F135-1) Project
 
@@ -12,7 +12,7 @@
 
 ## 📝 Project summary
 
-### A Study on the Image Classification Performance of Data Augmentation Techniques Using NeRF
+### A Study on the Image Classification Performance of Data Augmentation Techniques Using NeRF<sup>*</sup>(3D Reconstruction Model)
 
 - The project aims to utilize 3D object generation models like NeRF, 3D Gaussian Splatting, or Mesh to better understand occluded or unseen parts of objects, such as their backsides, and to address the issue of viewpoint variation in image classification.
 - We initiated the project with the belief that these models can enhance image classification accuracy by generating diverse viewpoints.
@@ -71,7 +71,7 @@
 ### Model
 
 - **[InstantMesh](https://github.com/TencentARC/InstantMesh)**
-  - Criterion:
+  - Goals:
     1. Fast generation from a single image.
     2. Applicable to various categories, not just for car and chair categories.
   
@@ -170,3 +170,18 @@
 
 ## 📊 Results
 
+| | **Baseline Model - ResNet18**   | **Baseline + 3D generated Images** |
+|---------------|----------------|-----------|
+| Accuracy       | 77.2%       | 78.9%         |
+
+
+---
+
+## 🔎 Limitations
+
+- As we can see in Github Issues in Pytorch3D (https://github.com/facebookresearch/pytorch3d/issues/666, https://github.com/facebookresearch/pytorch3d/issues/313,...), ***ShapeNetCore datasets are far from good qualities.***
+  - It seems that each object needs fine-tuning (lighting, texture, etc.).
+    - However, ShapeNetCore contains more than 50,000 objects...
+  -  **The quality of the image itself surely affects the process of generating 3D objects in InstantMesh.**
+- We used 12 Colab sessions simultaneously for this project.
+  - The biggest weakness might be the limited number of experiments.
