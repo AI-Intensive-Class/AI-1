@@ -9,6 +9,7 @@
 - [Project structure](#-project-structure)
 - [Methods](#-methods)
 - [Results](#-results)
+- [Limitations](#-limitations)
 
 ## 📝 Project summary
 
