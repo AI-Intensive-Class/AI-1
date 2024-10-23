@@ -33,6 +33,7 @@
 [<img src="https://github.com/user-attachments/assets/2cd6f151-439c-40be-bda6-c731f0279a24" width="300"/>](https://drive.google.com/drive/folders/11uGebvTBNHXhFe_3MCy2rR-CTfqGFIgH?usp=sharing)
 
 ```bash
+/Drive
 ├── 1. train_label_baseline.csv
 ├── 2. train_label_3d.csv
 ├── 3. test_label.csv
@@ -51,8 +52,10 @@
 ```bash
 /AI-1
 ├── 1. 3D-ResNet18.ipynb
-├── 2. Baseline-ResNet18.ipynb
-├── 3. dataloaders_ShapeNetCore.ipynb
+├── 2. 3D_ObjectGen.py
+├── 3. Baseline-ResNet18.ipynb
+├── 4. Capture_Image_from_Object.py
+├── 5. dataloaders_ShapeNetCore.ipynb
 └── README.md
 ```
 
@@ -67,7 +70,7 @@
 - `dataset*.zip`: Original datasets, including training and test datasets. Each number corresponds to a point of view.
 ---
 - `3D-ResNet18.ipynb`
-- `3D_ObjectGen.py` : 
+- `3D_ObjectGen.py` : Generating 3D Object files using InstantMesh
 - `Capture_Image_from_Object.py` : Capture each object's 5 view from 3D_ObjectGen.py Result file(.obj, .mtl .png)
 - `Baseline-ResNet18.ipynb`
 - `dataloaders_ShapeNetCore.ipynb`:  Images generated from the ShapeNetCore dataset.
