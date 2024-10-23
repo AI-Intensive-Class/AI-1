@@ -67,6 +67,8 @@
 - `dataset*.zip`: Original datasets, including training and test datasets. Each number corresponds to a point of view.
 ---
 - `3D-ResNet18.ipynb`
+- `3D_ObjectGen.py` :
+- `Capture_Image_from_Object.py` :
 - `Baseline-ResNet18.ipynb`
 - `dataloaders_ShapeNetCore.ipynb`:  Images generated from the ShapeNetCore dataset.
 
